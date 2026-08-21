@@ -1,0 +1,3 @@
+vehicle,year,model,ecu_id,original_filename,archive_filename,status,version,fuel,boost_target_psi,notes,sha256
+2012-wrx-ae5k800l,2012,WRX,AE5K800L,2012AIrev3.1.bin,2012_WRX_AE5K800L_AI_rev3.1.bin,unknown,3.1,,,Referenced in EcuFlash log,
+2012-wrx-ae5k800l,2012,WRX,AE5K800L,2012Codexv1.1.bin,2012_WRX_AE5K800L_Codex_v1.1.bin,unknown,1.1,,,Referenced in EcuFlash log,
