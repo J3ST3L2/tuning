@@ -12,11 +12,11 @@
 - WRX-Tuning  
   https://drive.google.com/drive/folders/1BiMhUSDIyB_QrIHeP9KJMS4yWb9yD01J
 
-Subfolders created:
+Subfolders include:
 
 - `00_Chat-Summaries`
 - `01_Tunes`
-- `02_Logs`
+- `02_Logs` (kept as a structural placeholder; raw CSV logs are intentionally not retained)
 - `03_Tables-Maps`
 - `04_Docs`
 
@@ -28,8 +28,6 @@ Subfolders created:
   https://drive.google.com/drive/folders/1LKiHnWc2IizxMjXn7AXGIegGvglt87Fu
 - WRX tune / boost issue ChatGPT conversation export  
   https://drive.google.com/drive/folders/1LRwpU_rUQHFD7tf318lym-748IWBkFhP
-- btSsm  
-  https://drive.google.com/drive/folders/1u_ZS2CFlJG75G-c5O06jNGY8p_f7fF9X
 
 ## Known archived tuning artifacts
 
@@ -37,20 +35,17 @@ Subfolders created:
 
 - `2012AIrev3.1.bin`
 - `EJ20X_WRX_tune_notes_2026-06-27.md`
-- June 27 RomRaider logs
 
 ### Later tune
 
 - `2012Codexv5.6_18psi_curve_smoothtylmafAVCSwgd.bin`
 
-### Recent BtSsm logs
+## CSV log policy
 
-- `BtSsm_20260828_182023.csv`
-- `BtSsm_20260828_201153.csv`
-- `BtSsm_20260910_125139.csv`
-- `BtSsm_20260919_120058.csv`
-- `BtSsm_20260919_142711.csv`
+Raw BtSsm/RomRaider CSV logs are considered disposable historical telemetry. They were purged from the portable archive on 2026-09-23.
+
+The durable archive keeps conclusions and decisions rather than piles of stale telemetry.
 
 ## Note
 
-The Google Drive archive is the complete preservation layer. This public GitHub repository is intentionally curated so unrelated private documents and receipts are not accidentally published alongside a ROM because apparently file hygiene still needs adult supervision.
+The Google Drive archive is the private preservation layer. This public GitHub repository is intentionally curated so unrelated private documents and receipts are not accidentally published alongside a ROM.
