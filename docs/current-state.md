@@ -1,6 +1,6 @@
 # Current WRX Tuning State
 
-_Last consolidated: 2026-09-22_
+_Last consolidated: 2026-09-23_
 
 ## Hardware
 
@@ -20,7 +20,7 @@ Known checkpoints include:
 - `2012Codexv4.9_combo_17psi_fuelcleanup_bridge.bin`
 - `2012Codexv5.6_18psi_curve_smoothtylmafAVCSwgd.bin`
 
-The v4.9-era work included target boost, maximum WGDC, initial WGDC, and fuel-cleanup revisions. The v5.6 calibration became the working tune for later logs and refinement.
+The v4.9-era work included target boost, maximum WGDC, initial WGDC, and fuel-cleanup revisions. The v5.6 calibration became the working tune for later refinement.
 
 ## Major issues addressed
 
@@ -34,26 +34,22 @@ Later driving showed very rich behavior, including low-10 AFR readings on the wi
 
 ### Knock review
 
-Recent work has included reviewing learned knock and using logs rather than blindly adding or removing timing.
+Recent work included learned-knock review and using measured behavior rather than blindly adding or removing timing.
 
 ### Mechanical changes
 
-A new O2 sensor was installed and a pre-turbo exhaust leak was repaired. Those changes matter because the calibration should be judged using post-repair logs rather than assuming older fuel-trim / AFR behavior still represents the car.
+A new O2 sensor was installed and a pre-turbo exhaust leak was repaired. Those changes matter because calibration conclusions drawn before the repair may not represent the current car.
 
 ### AVCS
 
 Exhaust AVCS was disabled in the current tuning direction. Intake AVCS was left unchanged.
 
-## Recent logs referenced
+## Raw-log retention policy
 
-- `BtSsm_20260828_182023.csv`
-- `BtSsm_20260828_201153.csv`
-- `BtSsm_20260910_125139.csv`
-- `BtSsm_20260919_120058.csv`
-- `BtSsm_20260919_142711.csv`
+Raw CSV tuning logs are not part of the durable archive. They were intentionally purged on 2026-09-23.
 
-Older RomRaider logs from June / July 2026 are retained as historical context.
+Preserve the conclusions, tune lineage, calibration decisions, tables/maps, and ROM images instead.
 
 ## Preservation rule
 
-Do not overwrite old ROMs. Every meaningful calibration revision should remain immutable and receive a new filename. Keep logs paired with the exact tune flashed when the log was recorded whenever that relationship is known.
+Do not overwrite old ROMs. Every meaningful calibration revision should remain immutable and receive a new filename.
