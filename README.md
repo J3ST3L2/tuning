@@ -25,7 +25,7 @@ Current work has focused on:
 - targeting roughly 17-19 psi
 - smoothing target boost / WGDC / turbo dynamics behavior
 - addressing rich low-10 AFR behavior during part-throttle / transition
-- reviewing learned knock from logs
+- learned-knock review
 - fuel cleanup after injector / pump changes
 - keeping exhaust AVCS disabled while leaving intake AVCS unchanged
 - validating behavior after replacing the O2 sensor and fixing a pre-turbo exhaust leak
@@ -34,10 +34,9 @@ Current work has focused on:
 
 - `docs/` - tuning history, decisions, current-state notes, archive indexes
 - `tunes/` - ROM images suitable for source control
-- `logs/` - selected data logs
 - `tables/` - exported maps / tables / calibration notes
 
-Large raw archives and redundant logs are also retained in Google Drive.
+Raw CSV tuning logs are intentionally **not retained**. They were purged from GitHub, Google Drive tuning archives, and ChatGPT Library on 2026-09-23 because they are obsolete transient data rather than durable project history.
 
 ## Google Drive archive
 
@@ -52,12 +51,13 @@ https://drive.google.com/drive/folders/1BiMhUSDIyB_QrIHeP9KJMS4yWb9yD01J
 Existing source collections catalogued for preservation:
 
 - AiTune
-- btSsm logs/backups
 - 06_Automotive_Tuning
 - WRX tune / boost issue ChatGPT export
 
 ## Archive policy
 
-GitHub contains the technical history that is safe to keep in a public repository. Google Drive keeps the complete raw archive, including binaries, bulky logs, spreadsheets, screenshots, and conversation-derived reference material.
+GitHub contains technical history that is safe to keep in a public repository. Google Drive keeps the complete private artifact archive for tune binaries, spreadsheets, screenshots, documentation, and conversation-derived reference material.
+
+Raw CSV tuning logs are disposable and excluded from the archive.
 
 Receipts, credentials, personal records, and unrelated private material do not belong in this public repository.
